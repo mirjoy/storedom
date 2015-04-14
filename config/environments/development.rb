@@ -8,4 +8,5 @@ Rails.application.configure do
   config.active_record.migration_error = :page_load
   config.assets.debug = true
   config.assets.raise_runtime_errors = true
+  config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
 end
